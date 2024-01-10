@@ -1,7 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app" class="app-container">
+    <metaInfo>
+      <title>Поиск товаров в гипермаркетах</title>
+    </metaInfo>
     <header>
-      <h1>Информационная Система Поиска Товаров в Гипермаркетах</h1>
+      <h1>Поиск товаров в гипермаркетах</h1>
     </header>
     <main>
       <div class="search-bar">
@@ -42,7 +45,17 @@ export default {
 </script>
 
 <style>
-/* Добавьте стили для вашего приложения, используя Bootstrap или свои собственные стили */
+.app-container {
+  position: absolute;
+  top: 10px;
+  left: 50%; /* Центрируем блок горизонтально */
+  transform: translateX(-50%); /* Смещаем блок влево на половину его ширины */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
